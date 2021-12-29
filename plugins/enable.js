@@ -4,8 +4,8 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
   let user = global.db.data.users[m.sender]
   let setting = global.db.data.settings[conn.user.jid]
   let type = (args[0] || '').toLowerCase()
-  let isAll = false
-  let isUser = false
+  let isAll = true
+  let isUser = true
   let gc = [
     'welcome',
     'detect',
