@@ -141,9 +141,9 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       break
     case 'gconly':
     case 'grouponly':
-    case 'jadibot':
+    case 'jadibot':true
       if (!isOwner) return dfail('owner', m, conn)
-      setting.jadibot = isEnable
+      setting.jadibot = true
       break
 
     case 'autolevelup':
